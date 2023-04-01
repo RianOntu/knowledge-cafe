@@ -57,12 +57,12 @@ console.log(time);
                     </div>
                     <div className="col-md-4 col-12">
                         <div className="spent">
-                            <h3>Spent time on read:{time}min</h3>
+                            <h3>Spent time on read : {time} min</h3>
                         </div>
                     <div className='bookmark-container'>
 
                
-               <h3>Bookmarked Blogs:{bookmarks.length}</h3>
+               <h3>Bookmarked Blogs : {bookmarks.length}</h3>
         
                 {
                     bookmarks.map(bookmark=><Bookmarks bookmark={bookmark}></Bookmarks>)

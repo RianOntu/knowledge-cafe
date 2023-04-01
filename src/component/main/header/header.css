@@ -1,0 +1,12 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #FC96F5;
+    padding:10px
+}
+nav img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
