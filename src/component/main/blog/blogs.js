@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Blogs = () => {
     const notify = () => toast("Bookmark Added!");
+    const alreadyAdded=()=>toast("Bookmark Already Added!");
   const [blogs,setBlogs]=useState([]);
   const [bookmarks,setBookmarks]=useState([]);
   const [time,setTime]=useState(0);
@@ -21,19 +22,20 @@ const handleMinCount=(min)=>{
 setTime(time+parseInt(min));
 console.log(time);
 
-
-   
-   
 }
-
-
-   
 
   const handleAddtoBookmark=(bookmark)=>{
   
         const newBookmark=[...bookmarks,bookmark];
         setBookmarks(newBookmark);
-     notify();
+     
+     if(bookmarks.includes(bookmark)){
+        alreadyAdded();
+     }
+     else{
+        notify();
+     }
+
         
   }
 
