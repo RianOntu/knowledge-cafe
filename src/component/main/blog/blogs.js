@@ -6,29 +6,31 @@ import Bookmarks from '../bookmark/bookmarks';
 
 
 const Blogs = () => {
+ 
   const [blogs,setBlogs]=useState([]);
   const [bookmarks,setBookmarks]=useState([]);
-  const [time,setTime]=useState([]);
-  let [sum,setSum]=useState(0);
+  const [time,setTime]=useState(0);
+  
 
 
 const handleMinCount=(min)=>{
-const newTime=[...time,min];
-setTime(newTime);
 
-for(let i=0;i<time.length;i++){
-    sum=sum+parseInt(time[i]);
-    setSum(sum)
-   }
+setTime(time+parseInt(min));
+console.log(time);
+
+
+   
+   
 }
 
 
-
+   
 
   const handleAddtoBookmark=(bookmark)=>{
   
         const newBookmark=[...bookmarks,bookmark];
         setBookmarks(newBookmark);
+        
   }
 
     useEffect(()=>{
@@ -49,7 +51,7 @@ for(let i=0;i<time.length;i++){
                     </div>
                     <div className="col-md-4 col-12">
                         <div className="spent">
-                            <h3>Spent time on read:{sum}min</h3>
+                            <h3>Spent time on read:{time}min</h3>
                         </div>
                     <div className='bookmark-container'>
 
@@ -62,7 +64,7 @@ for(let i=0;i<time.length;i++){
            
             
                </div>
-               
+
                     </div>
                 </div>
             </div>
