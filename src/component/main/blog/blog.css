@@ -1,0 +1,25 @@
+.blog img{
+    width:845px;
+    height: 450px;
+}
+
+.author_img{
+    height: 60px!important;
+    width: 60px!important;
+    border-radius: 50%;
+}
+.img_flex{
+    display: flex;
+}
+.description_flex{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 10px;
+}
+.bookmark_flex{
+    display: flex;
+
+}
+.fa-regular{
+    margin-left: 5px;
+}
