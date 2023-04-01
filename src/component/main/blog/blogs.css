@@ -9,3 +9,10 @@
     display: flex;
     justify-content: space-between;
 }
+.spent{
+    background-color:#EFEDFD ;
+    border:1px solid #1393FE;
+    margin:20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
