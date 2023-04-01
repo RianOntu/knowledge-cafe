@@ -1,7 +1,13 @@
 import React from 'react';
 import './blog.css'
 
+
+
+
+ 
+
 const Blog = (props) => {
+  
     
     const {id,author_name,blog_title,cover_image,author_image,read_time,publish_date}=props.blog;
     return (
@@ -24,7 +30,7 @@ const Blog = (props) => {
                 </div>
                 <div className='bookmark_flex'>
                   <div><p>{read_time} min read</p></div>
-                  <div><i onClick={()=>props.handleAddtoBookmark(props.blog)} class="fa-regular fa-bookmark"></i></div>
+                  <div><i onClick={()=>props.handleAddtoBookmark(props.blog)}  class="fa-regular fa-bookmark"></i></div>
                 </div>
 
             </div>

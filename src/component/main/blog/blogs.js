@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react';
 import Blog from './blog';
 import './blogs.css';
 import Bookmarks from '../bookmark/bookmarks';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
 const Blogs = () => {
- 
+    const notify = () => toast("Bookmark Added!");
   const [blogs,setBlogs]=useState([]);
   const [bookmarks,setBookmarks]=useState([]);
   const [time,setTime]=useState(0);
@@ -30,6 +33,7 @@ console.log(time);
   
         const newBookmark=[...bookmarks,bookmark];
         setBookmarks(newBookmark);
+     notify();
         
   }
 
@@ -70,7 +74,7 @@ console.log(time);
             </div>
          
           
-            
+            <ToastContainer/>
         </div>
     );
 };
