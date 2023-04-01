@@ -23,3 +23,6 @@
 .fa-regular{
     margin-left: 5px;
 }
+.fa-regular:focus{
+    color: red;
+}

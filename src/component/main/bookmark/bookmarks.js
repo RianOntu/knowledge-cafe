@@ -1,11 +1,12 @@
 import React from 'react';
+import "./bookmark.css"
 
-const bookmarks = () => {
+const Bookmarks = (props) => {
     return (
-        <div>
-            
+        <div className='bookmark'>
+            <h3>{props.bookmark.blog_title}</h3>
         </div>
     );
 };
 
-export default bookmarks;
+export default Bookmarks;

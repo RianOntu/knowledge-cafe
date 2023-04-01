@@ -1,0 +1,11 @@
+.bookmark-container{
+    background-color: #F3F3F3;
+    position: sticky;
+    top:0;
+    height: 100%;
+    padding: 20px;
+}
+.blogs{
+    display: flex;
+    justify-content: space-between;
+}

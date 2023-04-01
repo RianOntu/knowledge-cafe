@@ -2,6 +2,7 @@ import React from 'react';
 import './blog.css'
 
 const Blog = (props) => {
+    
     const {id,author_name,blog_title,cover_image,author_image,read_time,publish_date}=props.blog;
     return (
         <div className='blog'>
@@ -19,11 +20,11 @@ const Blog = (props) => {
                         
                       </div>
                       <h3>{blog_title}</h3>
-                    <a href="">Mark as read</a>
+                    <button onClick={()=>props.handleMinCount(props.blog.read_time)}>Mark as read</button>
                 </div>
                 <div className='bookmark_flex'>
                   <div><p>{read_time} min read</p></div>
-                  <div><i onClick={} class="fa-regular fa-bookmark"></i></div>
+                  <div><i onClick={()=>props.handleAddtoBookmark(props.blog)} class="fa-regular fa-bookmark"></i></div>
                 </div>
 
             </div>
