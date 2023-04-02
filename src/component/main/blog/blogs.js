@@ -56,11 +56,11 @@ console.log(time);
            </div>
                     </div>
                     <div className="col-md-4 col-12">
-                        <div className="spent">
+                       
+                    <div className='bookmark-container'>
+                    <div className="spent">
                             <h3>Spent time on read : {time} min</h3>
                         </div>
-                    <div className='bookmark-container'>
-
                
                <h3>Bookmarked Blogs : {bookmarks.length}</h3>
         
