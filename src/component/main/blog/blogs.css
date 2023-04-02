@@ -8,7 +8,7 @@
 }
 .blogs{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .spent{
     background-color:#EFEDFD ;

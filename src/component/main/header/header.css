@@ -1,6 +1,6 @@
 nav{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 20px;
     background-color: #FC96F5;
     padding:10px 0px;
